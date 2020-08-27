@@ -1,0 +1,37 @@
+{
+	"name": "xo-quick",
+	"version": "0.0.0",
+	"description": "Setup javascript Formatting and Linting",
+	"repository": "osdevisnot/xo-quick",
+	"license": "MIT",
+	"author": "osdevisnot <osdevisnot@gmail.com>",
+	"scripts": {
+		"postinstall": "node ./xo-quick.js"
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "xo --fix"
+		}
+	},
+	"xo": {
+		"extends": "xo-react",
+		"prettier": true
+	},
+	"prettier": {
+		"bracketSpacing": true,
+		"semi": false,
+		"singleQuote": true,
+		"trailingComma": "es5",
+		"useTabs": true
+	},
+	"dependencies": {
+		"eslint-config-xo-react": "^0.23.0",
+		"eslint-plugin-react": "^7.20.6",
+		"eslint-plugin-react-hooks": "^4.1.0",
+		"husky": "^4.2.5",
+		"prettier": "^2.1.1",
+		"prettier-plugin-packagejson": "^2.2.5",
+		"sort-package-json": "^1.44.0",
+		"xo": "^0.33.0"
+	}
+}
