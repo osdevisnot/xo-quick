@@ -3,7 +3,6 @@
 const { join } = require('path')
 const { writeFileSync, existsSync, unlinkSync } = require('fs')
 const sort = require('sort-package-json')
-
 const xo = require('./package.json')
 
 try {
@@ -18,6 +17,16 @@ try {
 		if (typeof pkg[tool] === 'undefined') {
 			pkg[tool] = xo[tool]
 			modified = true
+		} else {
+			for (const key in xo[tool]) {
+				if (
+					typeof pkg[tool][key] !== typeof xo[tool][key] ||
+					pkg[tool][key] !== xo[tool][key]
+				) {
+					pkg[tool][key] = xo[tool][key]
+					modified = true
+				}
+			}
 		}
 	})
 
