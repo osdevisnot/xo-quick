@@ -7,12 +7,10 @@ const sort = require('sort-package-json')
 const xo = require('./package.json')
 
 try {
-	const root = process.cwd()
+	const workDir = process.env.INIT_CWD
+
 	let modified = false
-	console.log('Working on root :', root)
-	console.log('Arguments INIT_CWD :', process.env.INIT_CWD)
-	console.log('Arguments PWD :', process.env.PWD)
-	let target = join(root, 'package.json')
+	let target = join(workDir, 'package.json')
 
 	const pkg = require(target)
 
@@ -28,7 +26,7 @@ try {
 	}
 
 	for (const file of ['.prettierrc', 'prettier.config.js']) {
-		target = join(root, file)
+		target = join(workDir, file)
 		if (existsSync(target)) {
 			unlinkSync(target)
 		}
