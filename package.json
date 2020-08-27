@@ -1,6 +1,6 @@
 {
 	"name": "xo-quick",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "Setup javascript Formatting and Linting",
 	"repository": "osdevisnot/xo-quick",
 	"license": "MIT",
