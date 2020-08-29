@@ -17,21 +17,11 @@ try {
 		if (typeof pkg[tool] === 'undefined') {
 			pkg[tool] = xo[tool]
 			modified = true
-		} else {
-			for (const key in xo[tool]) {
-				if (
-					typeof pkg[tool][key] !== typeof xo[tool][key] ||
-					pkg[tool][key] !== xo[tool][key]
-				) {
-					pkg[tool][key] = xo[tool][key]
-					modified = true
-				}
-			}
 		}
 	})
 
 	if (modified) {
-		writeFileSync(target, JSON.stringify(sort(pkg), null, '\t'), 'utf8')
+		writeFileSync(target, JSON.stringify(sort(pkg), null, '\t') + '\n', 'utf8')
 	}
 
 	for (const file of ['.prettierrc', 'prettier.config.js']) {
