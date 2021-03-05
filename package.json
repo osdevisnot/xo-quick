@@ -19,24 +19,24 @@
 	},
 	"prettier": {
 		"bracketSpacing": true,
+		"printWidth": 123,
 		"semi": false,
 		"singleQuote": true,
-		"trailingComma": "es5",
 		"useTabs": true
 	},
 	"dependencies": {
-		"@typescript-eslint/eslint-plugin": "^3.10.1",
-		"@typescript-eslint/parser": "^3.10.1",
-		"eslint": "^7.7.0",
-		"eslint-config-xo": "^0.32.1",
-		"eslint-config-xo-react": "^0.23.0",
-		"eslint-config-xo-typescript": "^0.32.0",
-		"eslint-plugin-react": "^7.20.6",
-		"eslint-plugin-react-hooks": "^4.1.0",
-		"husky": "^4.2.5",
-		"prettier": "^2.1.1",
-		"prettier-plugin-packagejson": "^2.2.5",
-		"sort-package-json": "^1.44.0",
-		"xo": "^0.33.0"
+		"@typescript-eslint/eslint-plugin": "^4.16.1",
+		"@typescript-eslint/parser": "^4.16.1",
+		"eslint": "^7.21.0",
+		"eslint-config-xo": "^0.35.0",
+		"eslint-config-xo-react": "^0.24.0",
+		"eslint-config-xo-typescript": "^0.38.0",
+		"eslint-plugin-react": "^7.22.0",
+		"eslint-plugin-react-hooks": "^4.2.0",
+		"husky": "^4.3.8",
+		"prettier": "^2.2.1",
+		"prettier-plugin-packagejson": "^2.2.10",
+		"sort-package-json": "^1.49.0",
+		"xo": "^0.38.2"
 	}
 }
