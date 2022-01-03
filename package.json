@@ -1,6 +1,6 @@
 {
 	"name": "xo-quick",
-	"version": "0.0.8",
+	"version": "0.0.9",
 	"description": "Setup javascript Formatting and Linting",
 	"repository": "osdevisnot/xo-quick",
 	"license": "MIT",
@@ -24,20 +24,20 @@
 		"useTabs": true
 	},
 	"dependencies": {
-		"@typescript-eslint/eslint-plugin": "^4.22.0",
-		"@typescript-eslint/parser": "^4.22.0",
-		"eslint": "^7.25.0",
-		"eslint-config-xo": "^0.36.0",
+		"@typescript-eslint/eslint-plugin": "^5.8.1",
+		"@typescript-eslint/parser": "^5.8.1",
+		"eslint": "^8.6.0",
+		"eslint-config-xo": "^0.39.0",
 		"eslint-config-xo-react": "^0.25.0",
-		"eslint-config-xo-typescript": "^0.40.0",
-		"eslint-plugin-react": "^7.23.2",
-		"eslint-plugin-react-hooks": "^4.2.0",
-		"husky": "^5.2.0",
-		"prettier": "^2.2.1",
-		"prettier-plugin-packagejson": "^2.2.10",
-		"sort-package-json": "^1.49.0"
+		"eslint-config-xo-typescript": "^0.48.0",
+		"eslint-plugin-react": "^7.28.0",
+		"eslint-plugin-react-hooks": "^4.3.0",
+		"husky": "^7.0.4",
+		"prettier": "^2.5.1",
+		"prettier-plugin-packagejson": "^2.2.15",
+		"sort-package-json": "^1.53.1"
 	},
 	"peerDependencies": {
-		"xo": "^0.39.1"
+		"xo": "^0.47.0"
 	}
 }
